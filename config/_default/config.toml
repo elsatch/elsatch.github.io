@@ -21,7 +21,7 @@ disableLanguages = ["fr"] # example: ["fr"] for disable french language
 extended = true
 min = "0.87.0"
 [[module.imports]]
-  path = 'github.com/peaceiris/hugo-mod-revealjs'
+path = "github.com/peaceiris/hugo-mod-revealjs"
 
 
 ############################# Outputs ##############################
