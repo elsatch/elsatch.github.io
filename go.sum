@@ -1,0 +1,3 @@
+github.com/mermaid-js/mermaid v8.8.5-0.20210510161447-417428aceada+incompatible/go.mod h1:pGJSm9DYANtp59DADJgNzFh1uIpkn5xaH3ZBdv1VNTI=
+github.com/peaceiris/hugo-mod-mermaidjs v0.9.0 h1:McUfF8bAmVYnQv1iX+7ds25e9L44o/49vEbFAHQ71wA=
+github.com/peaceiris/hugo-mod-mermaidjs v0.9.0/go.mod h1:P49aHKrQgzZhguUe5Zd9rQDzsm4rzQZWyYMH7IGF8/I=
