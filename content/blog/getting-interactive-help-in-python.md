@@ -110,6 +110,9 @@ One advantage of the official docs compared to the built-in help is that they in
 
 [//]: # "TODO: Sección: Describir como se busca info en Spyder y vscode"
 
+Spyder is a multi-platform open source data science IDE that comes bundled with Anaconda. It offers support out of the box to ![get contextual help using Ctrl+I](images/post/getting-interactive-help-in-python/get-contextual-help-shortcut.png). This is the 
+![output of the read_csv function](images/post/getting-interactive-help-in-python/output-of-read-csv-funtion.png)
+
 Depending on your IDE, it might include certain features to make it easier to write code.
 
 #### Conclusion

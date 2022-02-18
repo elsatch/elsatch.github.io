@@ -38,6 +38,7 @@ To create the config file we have to define three parameters:
 - Action: that will echo a message to the console with the draft files
 
 This was my initial config file (that failed):
+
 ```yaml
 rules:
   - name: Check Hugo drafts
@@ -84,7 +85,6 @@ rules:
 
 #### Testing the configuration
 
-
 Getting your file to pass the `organize check` command means that the syntax and routes on your config file do not contain errors. But we have to check now if our program works in the way we expect it, by listing the files that have the string: "drafts:true".
 
 ```console
@@ -124,7 +124,7 @@ It's been a long time since I had to do RegEx to match, so I opted for using [Re
 
 As I typed the string, I saw the regexp did not match my string so I launched the debugger option.
 
-# TODO Meter aquí captura de imagen
+[//]: # "TODO: Meter aquí captura de imagen"
 
 After typing the string again, selecting the Python regexp I saw it should work with my given string. Hummm, maybe the errror is then related to the string parsing in Organize?
 
@@ -147,8 +147,16 @@ But still no luck at all! I will try to troubleshoot this problem calling the re
 
 #### Checking if a string exists in a file using Python regexps
 
+[//]: # "TODO: Investigar paso 1) que encuentre todos los ficheros que contengan la cadena draft: true"
+
+[//]: # "TODO: Investigar paso 2) que solo encuentre la cadena en el frontmatter"
+
+[//]: # "TODO: Investigar paso 3) que solo encuentre la cadena en una linea completa, así me quito de detectar locuras"
 
 So it will look like this:
+
+[//]: # "TODO: Enable Mermaid extension on this file"
+
 {{<mermaid>}}
 graph LR;
     id1([Loc: Drafts folder])
@@ -160,11 +168,7 @@ graph LR;
     id3 --> id4;
 {{</mermaid>}}
 
-Warning: As in previous posts, I will be using Organize-tool v2. The syntax in this example will not work with previous versions.
-
-
-
-
+[//]: # "TODO: Configure this as a warning Warning: As in previous posts, I will be using Organize-tool v2. The syntax in this example will not work with previous versions."
 
 ```sh
 ValueError: Invalid location C:\Users\Mi PC\dev\elsatch.github.io\blog (root path 'C:\Users\Mi PC\dev\elsatch.github.io\blog'
@@ -175,3 +179,10 @@ Config is valid.
 ```
 
 #### Other alternatives to achieve the same results
+
+[//]: # "TODO: Buscar otras formas de encontrar cadenas en fichero. Se me ocurren facil usar find y/o usar las TODO de vscode"
+[//]: # "TODO: Dejar apuntado para un futuro post https://pypi.org/project/python-frontmatter/0.2.1/"
+
+Explore: https://kodify.net/hugo/cli/list-draft-content/
+PS C:\Users\Mi PC\dev\elsatch.github.io> hugo list drafts
+Error: Error building sites failed to download modules: binary with name "go" not found
