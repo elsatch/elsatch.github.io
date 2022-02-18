@@ -15,7 +15,8 @@ If you need to write several times the same shortcodes or writable incantations,
 Snippets are small fragments of code what can be inserted easily in your editor, using some keyword combination. In VSCode you can insert a snippet by typing the first characters and pressing `Ctrl+Space`.
 
 #### Keeping track of pending TODO's
-I am so used to using Org-mode in emacs that I miss the chance to add TODO's in any part of my documents. When I am writing new posts, I would love to to * TODO task, with the super simple org syntax. However, we are in markdown land and adding comments or tasks in the plain text is not that simple. 
+
+I am so used to using Org-mode in emacs that I miss the chance to add TODO's in any part of my documents. When I am writing new posts, I would love to to * TODO task, with the super simple org syntax. However, we are in markdown land and adding comments or tasks in the plain text is not that simple.
 
 After browsing Stack Overflow, it seems like the most cannonical way to add comments in Markdown, that won't be rendered into the final document is:
 
@@ -29,7 +30,6 @@ Warning! Note that there is a blank line after the comment!
 There is an extension for VSCode that looks for the keywords TODO and FIXME in the current workdir and offers a plain list. So I decided to create a snippet to insert the TODO's in a simple way in the markdown file that Hugo uses. It is super simple to create a snippet in VSCode (at least coming from Emacs YasSnippet land)
 
 #### How to create a custom snippet in VSCode
-
 
 To create the custom snippet in VSCode, you just need to click `File-> Preferences-> User Snippets`. A menu will pop-up asking if you want to create a new snippet file or add your snippet to one of the existing languages already defined. I choose markdown file an added the following lines:
 
