@@ -1,11 +1,11 @@
 ---
 title: "Meta editing problems... again"
 description: "meta description"
-image: "images/post/meta-editing-problems.png"
+image: "images/post/meta-editing-problems/meta-editing-problems.png"
 date: 2022-02-18T14:00:00+02:00
 categories: ["vscode", "editors","workflow"]
 type: "regular" # available types: [featured/regular]
-draft: true
+draft: false
 mermaid: false
 ---
 
@@ -15,7 +15,7 @@ I am a fan of customizable editors. Over the years, I have tried dozens of edito
 
 But I always hit a wall, once I need to tailor it to my actual needs for the moment, regardless an existing extension or configuration is available.
 
-Most of the editors live or die because of the communities that surround them. People create countless extensions and customizations to enable different use cases. But what happens if the existing solutions do not work for you? 
+Most of the editors live or die because of the communities that surround them. People create countless extensions and customizations to enable different use cases. But what happens if the existing solutions do not work for you?
 
 You end up with a meta problem, a wicked problem that would be solved by creating your own extensions or doing your own customizations. You are no longer spending time writing text, but writing code to make it simpler to make it write text.
 
@@ -47,7 +47,8 @@ This problem compounds if you use several operating systems and machines to writ
 
 If you are creating your own notes or documents, you can do these steps by hand and never look back. However, if you plan to publish the results in any meaningfull way, it doesn't work that well. In my particular case, I work creating online courses, manuals, producing videos and now this blog too. What is the actual problem in each platform? Let's say you want to publish an article or book and are using a Mac.
 
-##### MacOSX
+##### Exploring MacOSX workflow
+
 MacOSX offers a built-in tool to capture areas of your desktop easily. You can launch it pressing `Cmd+Shift+4`. It captures the area you select and save it on your desktop. Fortunately, newer versions allow you to change the default location. [File format by default is](https://support.apple.com/es-es/HT201361) “Captura de pantalla [fecha] a las [hora].png”. Once the capture is taken, a small thumbnail is displayed in the lower right corner for a few seconds and it disappears.
 
 If you click this thumbnail, you will be able to annotate the screenshot but if you want to do any meaningful changes to it, like changing the name, you have to open it with the QuickView tool. Using this app, you can change the default name and select the directory to save it.
@@ -137,3 +138,4 @@ The MarkdownPaste.Rules section could help with replacing the spaces with hypens
 
 How much time do these tasks take vs the time it will save me down the road? I have just spent three hours configuring and writing this post. Let's add a couple more to test Hugo publishing... I might need to double check the XKCD matrix :)
 
+Photo by Daniele Franchi on Unsplash

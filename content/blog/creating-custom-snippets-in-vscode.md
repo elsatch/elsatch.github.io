@@ -1,7 +1,7 @@
 ---
 title: "Create custom snippets in VSCode"
 description: "meta description"
-image: "images/post/create-custom-snippets-in-vscode.png"
+image: "images/post/create-custom-snippets-in-vscode/create-custom-snippets-in-vscode.png"
 date: 2022-02-18T16:00:00+02:00
 categories: ["vscode", "editors", "workflow"]
 type: "regular" # available types: [featured/regular]
@@ -46,3 +46,5 @@ Breaking down the body, I am asking VSCode to insert the [//] symbol, followed b
 To insert the snippet I just need to type add and press `Ctrl+Space` and I will get my new TODO inserted. To check all my TODOs I just need to open the command palette by pressing `Ctrl+Shift+P` and then choose the command list highlighted annotations ![command palette](images/post/creating-custom-snippets-in-vscode/list-highlight-todo.png). All my pending TODOs will be listed under the OUTPUT tab. ![sample list of pending todos](images/post/creating-custom-snippets-in-vscode/list-of-pending-todos.png)
 
 And now, it is time to work on those TODO's!!
+
+Photo by Sonja Prein on Unsplash
