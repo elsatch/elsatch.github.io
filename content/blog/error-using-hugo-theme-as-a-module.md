@@ -1,7 +1,7 @@
 ---
 title: "Error building my web when using Hugo Theme as a Hugo Module"
 description: "meta description"
-image: "images/post/hugo-theme-as-hugo-module.png"
+image: "images/post/error-hugo-theme-hugo-module/hugo-theme-as-hugo-module.png"
 date: 2022-02-09T14:00:00+02:00
 categories: ["hugo"]
 type: "regular" # available types: [featured/regular]
@@ -87,3 +87,5 @@ path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
 #### Realtime test
 
 If you can see this line, this fix solves the problem of Geeky Hugo (and other Bootstrap enabled) themes in Hugo, when loaded as a Hugo module.
+
+Photo by David Pupaza on Unsplash
