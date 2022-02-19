@@ -1,7 +1,7 @@
 ---
 title: "Create custom snippets in VSCode"
 description: "meta description"
-image: "images/post/create-custom-snippets-in-vscode/create-custom-snippets-in-vscode.png"
+image: "images/post/creating-custom-snippets-in-vscode/create-custom-snippets-in-vscode.png"
 date: 2022-02-18T16:00:00+02:00
 categories: ["vscode", "editors", "workflow"]
 type: "regular" # available types: [featured/regular]
