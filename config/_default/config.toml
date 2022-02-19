@@ -22,6 +22,9 @@ extended = true
 min = "0.87.0"
 
 [[module.imports]]
+path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
+
+[[module.imports]]
 path = "github.com/elsatch/geeky-hugo"
 
 [[module.imports]]
