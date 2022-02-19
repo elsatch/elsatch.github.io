@@ -1,3 +1,7 @@
+github.com/elsatch/geeky-hugo v0.0.0-20220219094537-01c5ae103843 h1:5HOU+nSAAnu+bhpu3OA7ifEsjL+M6Vw4wI5FR/rDnTc=
+github.com/elsatch/geeky-hugo v0.0.0-20220219094537-01c5ae103843/go.mod h1:rUs+FDNMdpIVzPMMBQhkwazsAXq1HG8vDpN6ruAnoiI=
+github.com/elsatch/geeky-hugo v0.0.0-20220219095841-700f69e277aa h1:AS0RQDAOHUzksm/tZZCKQMglG1INm3dnavHCpzET20w=
+github.com/elsatch/geeky-hugo v0.0.0-20220219095841-700f69e277aa/go.mod h1:rUs+FDNMdpIVzPMMBQhkwazsAXq1HG8vDpN6ruAnoiI=
 github.com/mermaid-js/mermaid v8.8.5-0.20210510161447-417428aceada+incompatible/go.mod h1:pGJSm9DYANtp59DADJgNzFh1uIpkn5xaH3ZBdv1VNTI=
 github.com/peaceiris/hugo-mod-mermaidjs v0.9.0 h1:McUfF8bAmVYnQv1iX+7ds25e9L44o/49vEbFAHQ71wA=
 github.com/peaceiris/hugo-mod-mermaidjs v0.9.0/go.mod h1:P49aHKrQgzZhguUe5Zd9rQDzsm4rzQZWyYMH7IGF8/I=
