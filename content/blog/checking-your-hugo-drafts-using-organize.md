@@ -186,3 +186,5 @@ Config is valid.
 Explore: https://kodify.net/hugo/cli/list-draft-content/
 PS C:\Users\Mi PC\dev\elsatch.github.io> hugo list drafts
 Error: Error building sites failed to download modules: binary with name "go" not found
+
+![Output of hugo list drafts command](images/post/checking-your-hugo-drafts-using-organize/hugo-list-drafts-ok.png)

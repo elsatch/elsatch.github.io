@@ -20,6 +20,10 @@ disableLanguages = ["fr"] # example: ["fr"] for disable french language
 [module.hugoVersion]
 extended = true
 min = "0.87.0"
+
+[[module.imports]]
+path = "https://github.com/elsatch/geeky-hugo"
+
 [[module.imports]]
 path = "github.com/peaceiris/hugo-mod-mermaidjs"
 
