@@ -7,11 +7,11 @@ logo = "images/logo.png"
 # Note: logo_width is not work with .svg file
 logo_width = "150x"
 # logo text will only show when logo is missing.
-logo_text = "Boilerplate"
+logo_text = "['elsatch']"
 # navbar fixed to top
 navbar_fixed = false
 # OpenGraph / Twitter Card metadata
-description = "This is meta description"
+description = "elsatch's website"
 author = "elsatch"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 # contact info
