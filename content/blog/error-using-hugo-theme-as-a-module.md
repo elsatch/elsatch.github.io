@@ -2,9 +2,9 @@
 title: "Error building my web when using Hugo Theme as a Hugo Module"
 description: "meta description"
 image: "images/post/error-hugo-theme-hugo-module/hugo-theme-as-hugo-module.png"
-date: 2022-02-09T14:00:00+02:00
+date: 2022-02-20T01:10:00+02:00
 categories: ["hugo"]
-type: "regular" # available types: [featured/regular]
+type: "featured" # available types: [featured/regular]
 draft: false
 mermaid: false
 ---

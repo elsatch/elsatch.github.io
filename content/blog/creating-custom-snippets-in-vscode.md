@@ -43,7 +43,15 @@ To create the custom snippet in VSCode, you just need to click `File-> Preferenc
 
 Breaking down the body, I am asking VSCode to insert the [//] symbol, followed by the hashtag, then a escaped double comma before the keyword TODO (followed by double dot) that marks the beginning of the comment. Then I mark where I would like my cursor to go after pasting the snippet by using $0. There is a closing double comma followed by the new line character.
 
-To insert the snippet I just need to type add and press `Ctrl+Space` and I will get my new TODO inserted. To check all my TODOs I just need to open the command palette by pressing `Ctrl+Shift+P` and then choose the command list highlighted annotations ![command palette](images/post/creating-custom-snippets-in-vscode/list-highlight-todo.png). All my pending TODOs will be listed under the OUTPUT tab. ![sample list of pending todos](images/post/creating-custom-snippets-in-vscode/list-of-pending-todos.png)
+To insert the snippet I just need to type add and press `Ctrl+Space` and I will get my new TODO inserted.
+
+To check all my TODOs I just need to open the command palette by pressing `Ctrl+Shift+P` and then choose the command list highlighted annotations.
+
+![command palette](images/post/creating-custom-snippets-in-vscode/list-highlight-todo.png).
+
+All my pending TODOs will be listed under the OUTPUT tab.
+
+![sample list of pending todos](images/post/creating-custom-snippets-in-vscode/list-of-pending-todos.png)
 
 And now, it is time to work on those TODO's!!
 

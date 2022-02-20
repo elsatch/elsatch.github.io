@@ -5,7 +5,7 @@ image: "images/post/organize-use-cases.png"
 date: 2022-02-09T14:00:00+02:00
 categories: ["python", "organize-tool"]
 type: "featured" # available types: [featured/regular]
-draft: false
+draft: true
 mermaid: true
 ---
 
