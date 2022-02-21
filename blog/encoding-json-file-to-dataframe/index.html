@@ -1,10 +1,10 @@
 <!doctype html><html lang=en-us>
 <head>
 <meta charset=utf-8>
-<title>elsatch | Data and tech</title>
+<title>Encoding order matters when converting JSON files into a dataframe</title>
 <base href=https://elsatch.github.io>
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=5">
-<meta name=description content="elsatch's website">
+<meta name=description content="meta description">
 <meta name=author content="elsatch">
 <meta name=generator content="Hugo 0.91.2">
 <link rel="shortcut icon" href=/images/favicon_hucdab0db5e9bb88ce4c3423ef2aa94a32_2461_32x0_resize_box_3.png type=image/x-icon>
@@ -15,15 +15,17 @@
 <link rel=manifest href=/manifest.webmanifest>
 <meta name=msapplication-TileColor content="#FF0000">
 <meta name=theme-color content="#FFF">
-<meta name=twitter:title content="elsatch | Data and tech">
-<meta name=twitter:description content="elsatch's website">
-<meta property="og:title" content="elsatch | Data and tech">
-<meta property="og:description" content="elsatch's website">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://elsatch.github.io/">
+<meta name=twitter:title content="Encoding order matters when converting JSON files into a dataframe">
+<meta name=twitter:description content="meta description">
+<meta property="og:title" content="Encoding order matters when converting JSON files into a dataframe">
+<meta property="og:description" content="meta description">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://elsatch.github.io/blog/encoding-json-file-to-dataframe/"><meta property="article:section" content="blog">
+<meta property="article:published_time" content="2022-02-21T15:30:00+02:00">
+<meta property="article:modified_time" content="2022-02-21T15:30:00+02:00">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="elsatch | Data and tech">
-<meta name=twitter:description content="elsatch's website">
+<meta name=twitter:title content="Encoding order matters when converting JSON files into a dataframe">
+<meta name=twitter:description content="meta description">
 <meta http-equiv=x-dns-prefetch-control content="on">
 <link rel=preconnect href=//ajax.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin=anonymous>
@@ -149,311 +151,140 @@ Pages
 </div>
 </header>
 <main>
-<section class="banner text-center text-lg-start" style=background-image:url(/images/banner-bg-shape.svg)>
+<section class=section-sm>
 <div class=container>
-<div class="row align-items-center flex-column-reverse flex-lg-row">
-<div class="col-lg-6 mb-5 mb-lg-0">
-<h1 class="banner-title mb-0">Welcome</h1>
-<h2 class="h2 fw-normal mb-4">to el<strong>satch</strong>&rsquo;s Blog</h2>
-<p class="mb-4 fs-6 text-light-600">Here I will share my insights about data and tech, focusing on Python, Data Engineering and personal productivity tools.</p>
-<a href=https://elsatch.github.io/about/ class="btn btn-primary">Know About Me</a>
-</div>
-<div class="col-lg-6 col-sm-6 col-9 mx-auto mb-5 mb-lg-0">
-<img decoding=async loading=lazy width=640 height=480 src=/images/banner_hua40a2f791957fba83bebfcf33927bec1_400892_640x0_resize_q90_h2_box_3.webp onerror="this.onerror=null,this.src='/images/banner.png'" alt=banner-img class=img-fluid>
-</div>
-</div>
-</div>
-</section>
-<section class=section>
-<div class=container>
-<div class=section-title>
-<h2 class="h4 title-border">Featured Post</h2>
-</div>
 <div class=row>
 <div class="col-lg-8 mb-5 mb-lg-0">
-<div class="border rounded d-lg-flex p-4 mb-5">
-<div class="col-lg-6 me-lg-4 mb-5 mb-lg-0">
-<script src=https://elsatch.github.io/mod/mermaidjs/mermaid.min.e10726b8d0771e4cbd514fca2046be04c0e0e9e026868bb85c6b48445519c89048614f7edb73da4dfdd77126080f6e4fc6b0420571c1a2afa4446de7fe2ad266.js integrity="sha512-4QcmuNB3Hky9UU/KIEa+BMDg6eAmhou4XGtIRFUZyJBIYU9+23PaTf3XcSYID25PxrBCBXHBoq+kRG3n/irSZg=="></script>
-<script>var config={startOnLoad:!0,flowchart:{useMaxWidth:!0,htmlLabels:!0,curve:"cardinal"},theme:"neutral",securityLevel:"strict"};mermaid.initialize(config)</script>
-<div class=card>
-<div class="mb-4 position-relative">
+<div class=position-relative>
 <picture>
-<source srcset=/images/post/error-hugo-theme-hugo-module/hugo-theme-as-hugo-module_hub844ef663fb652406c2efbdabbe424ee_5646089_545x0_resize_q90_h2_box_3.webp media="(max-width: 575px)">
-<source srcset=/images/post/error-hugo-theme-hugo-module/hugo-theme-as-hugo-module_hub844ef663fb652406c2efbdabbe424ee_5646089_600x0_resize_q90_h2_box_3.webp media="(max-width: 767px)">
-<source srcset=/images/post/error-hugo-theme-hugo-module/hugo-theme-as-hugo-module_hub844ef663fb652406c2efbdabbe424ee_5646089_650x0_resize_q90_h2_box_3.webp>
-<img loading=lazy decoding=async class="img-fluid w-100 rounded-4" src=/images/post/error-hugo-theme-hugo-module/hugo-theme-as-hugo-module_hub844ef663fb652406c2efbdabbe424ee_5646089_650x0_resize_box_3.png alt="Error building my web when using Hugo Theme as a Hugo Module" width=1920 height=1280>
+<source srcset=/images/post/encoding-json-file-to-dataframe/encoding-json-file-to-dataframe_hu9ff439b057345f87f0a47ae5fe6ede78_544647_600x0_resize_q90_h2_box_3.webp media="(max-width: 575px)">
+<source srcset=/images/post/encoding-json-file-to-dataframe/encoding-json-file-to-dataframe_hu9ff439b057345f87f0a47ae5fe6ede78_544647_800x0_resize_q90_h2_box_3.webp media="(max-width: 767px)">
+<source srcset=/images/post/encoding-json-file-to-dataframe/encoding-json-file-to-dataframe_hu9ff439b057345f87f0a47ae5fe6ede78_544647_1000x0_resize_q90_h2_box_3.webp media="(max-width: 992px)">
+<source srcset=/images/post/encoding-json-file-to-dataframe/encoding-json-file-to-dataframe_hu9ff439b057345f87f0a47ae5fe6ede78_544647_1400x0_resize_q90_h2_box_3.webp>
+<img loading=lazy decoding=async class="img-fluid mb-5 w-100 rounded-4" src=/images/post/encoding-json-file-to-dataframe/encoding-json-file-to-dataframe_hu9ff439b057345f87f0a47ae5fe6ede78_544647_1400x0_resize_box_3.png alt="Encoding order matters when converting JSON files into a dataframe" width=1920 height=1280>
 </picture>
 <ul class="list-inline card-badge">
 <li class=list-inline-item>
-<a href=/categories/hugo/ class="badge badge-primary py-1">Hugo</a>
+<a href=/categories/python class="badge badge-primary py-1">Python</a>
+</li>
+<li class=list-inline-item>
+<a href=/categories/data-ingestion class="badge badge-primary py-1">Data Ingestion</a>
+</li>
+<li class=list-inline-item>
+<a href=/categories/data-engineering class="badge badge-primary py-1">Data Engineering</a>
 </li>
 </ul>
 </div>
-<div class=card-body>
-<h3 class=h6>
-<a class=title-linked href=/blog/error-using-hugo-theme-as-a-module/>Error building my web when using Hugo Theme as a Hugo Module</a>
-</h3>
-<ul class="list-inline card-meta d-flex align-items-center mb-3">
+<h1 class="h3 mb-4">Encoding order matters when converting JSON files into a dataframe</h1>
+<ul class="list-inline card-meta d-flex align-items-center mb-4">
 <li class="list-inline-item d-flex align-items-center">
 <i class="fas fa-user me-2"></i>
-<a href=/about/>elsatch</a>
-</li>
-<li class="list-inline-item d-flex align-items-center">
-<i class="fas fa-calendar me-2"></i>
-<span>February 20, 2022</span>
-</li>
-</ul>
-<p class="card-text mb-4">Introduction I have choosen Geeky Hugo as the theme for this site. I forked the original repo to my Github account.</p>
-<a href=/blog/error-using-hugo-theme-as-a-module/ class="btn btn-outline-primary btn-sm">Read more</a>
-</div>
-</div>
-</div>
-<div class="col-lg-6 pe-4 blog-card-list scroll-list">
-</div>
-</div>
-<div class=section-title>
-<h2 class="h4 title-border">Recent Post</h2>
-</div>
-<div class="border pt-4 mb-5 rounded">
-<div class="row mx-0 g-5">
-<div class="col-sm-6 mb-4">
-<script src=https://elsatch.github.io/mod/mermaidjs/mermaid.min.e10726b8d0771e4cbd514fca2046be04c0e0e9e026868bb85c6b48445519c89048614f7edb73da4dfdd77126080f6e4fc6b0420571c1a2afa4446de7fe2ad266.js integrity="sha512-4QcmuNB3Hky9UU/KIEa+BMDg6eAmhou4XGtIRFUZyJBIYU9+23PaTf3XcSYID25PxrBCBXHBoq+kRG3n/irSZg=="></script>
-<script>var config={startOnLoad:!0,flowchart:{useMaxWidth:!0,htmlLabels:!0,curve:"cardinal"},theme:"neutral",securityLevel:"strict"};mermaid.initialize(config)</script>
-<div class=card>
-<div class="mb-4 position-relative">
-<picture>
-<source srcset=/images/post/encoding-json-file-to-dataframe/encoding-json-file-to-dataframe_hu9ff439b057345f87f0a47ae5fe6ede78_544647_545x0_resize_q90_h2_box_3.webp media="(max-width: 575px)">
-<source srcset=/images/post/encoding-json-file-to-dataframe/encoding-json-file-to-dataframe_hu9ff439b057345f87f0a47ae5fe6ede78_544647_600x0_resize_q90_h2_box_3.webp media="(max-width: 767px)">
-<source srcset=/images/post/encoding-json-file-to-dataframe/encoding-json-file-to-dataframe_hu9ff439b057345f87f0a47ae5fe6ede78_544647_650x0_resize_q90_h2_box_3.webp>
-<img loading=lazy decoding=async class="img-fluid w-100 rounded-4" src=/images/post/encoding-json-file-to-dataframe/encoding-json-file-to-dataframe_hu9ff439b057345f87f0a47ae5fe6ede78_544647_650x0_resize_box_3.png alt="Encoding order matters when converting JSON files into a dataframe" width=1920 height=1280>
-</picture>
-<ul class="list-inline card-badge">
-<li class=list-inline-item>
-<a href=/categories/python/ class="badge badge-primary py-1">Python</a>
-</li>
-<li class=list-inline-item>
-<a href=/categories/data-ingestion/ class="badge badge-primary py-1">Data Ingestion</a>
-</li>
-<li class=list-inline-item>
-<a href=/categories/data-engineering/ class="badge badge-primary py-1">Data Engineering</a>
-</li>
-</ul>
-</div>
-<div class=card-body>
-<h3 class=h6>
-<a class=title-linked href=/blog/encoding-json-file-to-dataframe/>Encoding order matters when converting JSON files into a dataframe</a>
-</h3>
-<ul class="list-inline card-meta d-flex align-items-center mb-3">
-<li class="list-inline-item d-flex align-items-center">
-<i class="fas fa-user me-2"></i>
-<a href=/about/>elsatch</a>
+<a href=/about>elsatch</a>
 </li>
 <li class="list-inline-item d-flex align-items-center">
 <i class="fas fa-calendar me-2"></i>
 <span>February 21, 2022</span>
 </li>
 </ul>
-<p class="card-text mb-4">This week I started researching on Fablabs.io huge dataset of Fablab spaces all around the world. The website offers an API and also a direct link to download all records.</p>
-<a href=/blog/encoding-json-file-to-dataframe/ class="btn btn-outline-primary btn-sm">Read more</a>
-</div>
-</div>
-</div>
-<div class="col-sm-6 mb-4">
-<script src=https://elsatch.github.io/mod/mermaidjs/mermaid.min.e10726b8d0771e4cbd514fca2046be04c0e0e9e026868bb85c6b48445519c89048614f7edb73da4dfdd77126080f6e4fc6b0420571c1a2afa4446de7fe2ad266.js integrity="sha512-4QcmuNB3Hky9UU/KIEa+BMDg6eAmhou4XGtIRFUZyJBIYU9+23PaTf3XcSYID25PxrBCBXHBoq+kRG3n/irSZg=="></script>
-<script>var config={startOnLoad:!0,flowchart:{useMaxWidth:!0,htmlLabels:!0,curve:"cardinal"},theme:"neutral",securityLevel:"strict"};mermaid.initialize(config)</script>
-<div class=card>
-<div class="mb-4 position-relative">
-<picture>
-<source srcset=/images/post/error-hugo-theme-hugo-module/hugo-theme-as-hugo-module_hub844ef663fb652406c2efbdabbe424ee_5646089_545x0_resize_q90_h2_box_3.webp media="(max-width: 575px)">
-<source srcset=/images/post/error-hugo-theme-hugo-module/hugo-theme-as-hugo-module_hub844ef663fb652406c2efbdabbe424ee_5646089_600x0_resize_q90_h2_box_3.webp media="(max-width: 767px)">
-<source srcset=/images/post/error-hugo-theme-hugo-module/hugo-theme-as-hugo-module_hub844ef663fb652406c2efbdabbe424ee_5646089_650x0_resize_q90_h2_box_3.webp>
-<img loading=lazy decoding=async class="img-fluid w-100 rounded-4" src=/images/post/error-hugo-theme-hugo-module/hugo-theme-as-hugo-module_hub844ef663fb652406c2efbdabbe424ee_5646089_650x0_resize_box_3.png alt="Error building my web when using Hugo Theme as a Hugo Module" width=1920 height=1280>
-</picture>
-<ul class="list-inline card-badge">
-<li class=list-inline-item>
-<a href=/categories/hugo/ class="badge badge-primary py-1">Hugo</a>
-</li>
-</ul>
-</div>
-<div class=card-body>
-<h3 class=h6>
-<a class=title-linked href=/blog/error-using-hugo-theme-as-a-module/>Error building my web when using Hugo Theme as a Hugo Module</a>
-</h3>
-<ul class="list-inline card-meta d-flex align-items-center mb-3">
-<li class="list-inline-item d-flex align-items-center">
-<i class="fas fa-user me-2"></i>
-<a href=/about/>elsatch</a>
-</li>
-<li class="list-inline-item d-flex align-items-center">
-<i class="fas fa-calendar me-2"></i>
-<span>February 20, 2022</span>
-</li>
-</ul>
-<p class="card-text mb-4">Introduction I have choosen Geeky Hugo as the theme for this site. I forked the original repo to my Github account.</p>
-<a href=/blog/error-using-hugo-theme-as-a-module/ class="btn btn-outline-primary btn-sm">Read more</a>
-</div>
-</div>
-</div>
-<div class="col-sm-6 mb-4">
-<script src=https://elsatch.github.io/mod/mermaidjs/mermaid.min.e10726b8d0771e4cbd514fca2046be04c0e0e9e026868bb85c6b48445519c89048614f7edb73da4dfdd77126080f6e4fc6b0420571c1a2afa4446de7fe2ad266.js integrity="sha512-4QcmuNB3Hky9UU/KIEa+BMDg6eAmhou4XGtIRFUZyJBIYU9+23PaTf3XcSYID25PxrBCBXHBoq+kRG3n/irSZg=="></script>
-<script>var config={startOnLoad:!0,flowchart:{useMaxWidth:!0,htmlLabels:!0,curve:"cardinal"},theme:"neutral",securityLevel:"strict"};mermaid.initialize(config)</script>
-<div class=card>
-<div class="mb-4 position-relative">
-<picture>
-<source srcset=/images/post/creating-custom-snippets-in-vscode/create-custom-snippets-in-vscode_hu7501db08e317ee7b9c2b240b4f9d45b5_362770_545x0_resize_q90_h2_box_3.webp media="(max-width: 575px)">
-<source srcset=/images/post/creating-custom-snippets-in-vscode/create-custom-snippets-in-vscode_hu7501db08e317ee7b9c2b240b4f9d45b5_362770_600x0_resize_q90_h2_box_3.webp media="(max-width: 767px)">
-<source srcset=/images/post/creating-custom-snippets-in-vscode/create-custom-snippets-in-vscode_hu7501db08e317ee7b9c2b240b4f9d45b5_362770_650x0_resize_q90_h2_box_3.webp>
-<img loading=lazy decoding=async class="img-fluid w-100 rounded-4" src=/images/post/creating-custom-snippets-in-vscode/create-custom-snippets-in-vscode_hu7501db08e317ee7b9c2b240b4f9d45b5_362770_650x0_resize_box_3.png alt="Create custom snippets in VSCode" width=1920 height=1280>
-</picture>
-<ul class="list-inline card-badge">
-<li class=list-inline-item>
-<a href=/categories/vscode/ class="badge badge-primary py-1">Vscode</a>
-</li>
-<li class=list-inline-item>
-<a href=/categories/editors/ class="badge badge-primary py-1">Editors</a>
-</li>
-<li class=list-inline-item>
-<a href=/categories/workflow/ class="badge badge-primary py-1">Workflow</a>
-</li>
-</ul>
-</div>
-<div class=card-body>
-<h3 class=h6>
-<a class=title-linked href=/blog/creating-custom-snippets-in-vscode/>Create custom snippets in VSCode</a>
-</h3>
-<ul class="list-inline card-meta d-flex align-items-center mb-3">
-<li class="list-inline-item d-flex align-items-center">
-<i class="fas fa-user me-2"></i>
-<a href=/about/>elsatch</a>
-</li>
-<li class="list-inline-item d-flex align-items-center">
-<i class="fas fa-calendar me-2"></i>
-<span>February 18, 2022</span>
-</li>
-</ul>
-<p class="card-text mb-4">Introduction If you need to write several times the same shortcodes or writable incantations, it might make sense to use snippets.</p>
-<a href=/blog/creating-custom-snippets-in-vscode/ class="btn btn-outline-primary btn-sm">Read more</a>
-</div>
-</div>
-</div>
-<div class="col-sm-6 mb-4">
-<script src=https://elsatch.github.io/mod/mermaidjs/mermaid.min.e10726b8d0771e4cbd514fca2046be04c0e0e9e026868bb85c6b48445519c89048614f7edb73da4dfdd77126080f6e4fc6b0420571c1a2afa4446de7fe2ad266.js integrity="sha512-4QcmuNB3Hky9UU/KIEa+BMDg6eAmhou4XGtIRFUZyJBIYU9+23PaTf3XcSYID25PxrBCBXHBoq+kRG3n/irSZg=="></script>
-<script>var config={startOnLoad:!0,flowchart:{useMaxWidth:!0,htmlLabels:!0,curve:"cardinal"},theme:"neutral",securityLevel:"strict"};mermaid.initialize(config)</script>
-<div class=card>
-<div class="mb-4 position-relative">
-<picture>
-<source srcset=/images/post/meta-editing-problems/meta-editing-problems_huf30791e25402d48bf1d47c2f65eadfc4_369715_545x0_resize_q90_h2_box_3.webp media="(max-width: 575px)">
-<source srcset=/images/post/meta-editing-problems/meta-editing-problems_huf30791e25402d48bf1d47c2f65eadfc4_369715_600x0_resize_q90_h2_box_3.webp media="(max-width: 767px)">
-<source srcset=/images/post/meta-editing-problems/meta-editing-problems_huf30791e25402d48bf1d47c2f65eadfc4_369715_650x0_resize_q90_h2_box_3.webp>
-<img loading=lazy decoding=async class="img-fluid w-100 rounded-4" src=/images/post/meta-editing-problems/meta-editing-problems_huf30791e25402d48bf1d47c2f65eadfc4_369715_650x0_resize_box_3.png alt="Meta editing problems... again" width=1920 height=1280>
-</picture>
-<ul class="list-inline card-badge">
-<li class=list-inline-item>
-<a href=/categories/vscode/ class="badge badge-primary py-1">Vscode</a>
-</li>
-<li class=list-inline-item>
-<a href=/categories/editors/ class="badge badge-primary py-1">Editors</a>
-</li>
-<li class=list-inline-item>
-<a href=/categories/workflow/ class="badge badge-primary py-1">Workflow</a>
-</li>
-</ul>
-</div>
-<div class=card-body>
-<h3 class=h6>
-<a class=title-linked href=/blog/meta-editing-problems/>Meta editing problems&mldr; again</a>
-</h3>
-<ul class="list-inline card-meta d-flex align-items-center mb-3">
-<li class="list-inline-item d-flex align-items-center">
-<i class="fas fa-user me-2"></i>
-<a href=/about/>elsatch</a>
-</li>
-<li class="list-inline-item d-flex align-items-center">
-<i class="fas fa-calendar me-2"></i>
-<span>February 18, 2022</span>
-</li>
-</ul>
-<p class="card-text mb-4">Introduction I am a fan of customizable editors. Over the years, I have tried dozens of editors to create my content, posts, texts, etc.</p>
-<a href=/blog/meta-editing-problems/ class="btn btn-outline-primary btn-sm">Read more</a>
-</div>
-</div>
-</div>
-<div class="col-sm-6 mb-4">
-<script src=https://elsatch.github.io/mod/mermaidjs/mermaid.min.e10726b8d0771e4cbd514fca2046be04c0e0e9e026868bb85c6b48445519c89048614f7edb73da4dfdd77126080f6e4fc6b0420571c1a2afa4446de7fe2ad266.js integrity="sha512-4QcmuNB3Hky9UU/KIEa+BMDg6eAmhou4XGtIRFUZyJBIYU9+23PaTf3XcSYID25PxrBCBXHBoq+kRG3n/irSZg=="></script>
-<script>var config={startOnLoad:!0,flowchart:{useMaxWidth:!0,htmlLabels:!0,curve:"cardinal"},theme:"neutral",securityLevel:"strict"};mermaid.initialize(config)</script>
-<div class=card>
-<div class="mb-4 position-relative">
-<picture>
-<source srcset=/images/post/introduction-organize-tool_hu8f64c5febe8d477323813b82223057ec_3507452_545x0_resize_q90_h2_box_3.webp media="(max-width: 575px)">
-<source srcset=/images/post/introduction-organize-tool_hu8f64c5febe8d477323813b82223057ec_3507452_600x0_resize_q90_h2_box_3.webp media="(max-width: 767px)">
-<source srcset=/images/post/introduction-organize-tool_hu8f64c5febe8d477323813b82223057ec_3507452_650x0_resize_q90_h2_box_3.webp>
-<img loading=lazy decoding=async class="img-fluid w-100 rounded-4" src=/images/post/introduction-organize-tool_hu8f64c5febe8d477323813b82223057ec_3507452_650x0_resize_box_3.png alt="Introduction to Organize tool" width=1920 height=1080>
-</picture>
-<ul class="list-inline card-badge">
-<li class=list-inline-item>
-<a href=/categories/python/ class="badge badge-primary py-1">Python</a>
-</li>
-<li class=list-inline-item>
-<a href=/categories/organize-tool/ class="badge badge-primary py-1">Organize-Tool</a>
-</li>
-</ul>
-</div>
-<div class=card-body>
-<h3 class=h6>
-<a class=title-linked href=/blog/introduction-to-organize-tool/>Introduction to Organize tool</a>
-</h3>
-<ul class="list-inline card-meta d-flex align-items-center mb-3">
-<li class="list-inline-item d-flex align-items-center">
-<i class="fas fa-user me-2"></i>
-<a href=/about/>elsatch</a>
-</li>
-<li class="list-inline-item d-flex align-items-center">
-<i class="fas fa-calendar me-2"></i>
-<span>February 8, 2022</span>
-</li>
-</ul>
-<p class="card-text mb-4">Organize is a command line python utility that helps you organize your files based on rules. It is created by Thomas Feldmann and it&rsquo;s available from his github repository.</p>
-<a href=/blog/introduction-to-organize-tool/ class="btn btn-outline-primary btn-sm">Read more</a>
-</div>
-</div>
-</div>
-<div class="col-sm-6 mb-4">
-<script src=https://elsatch.github.io/mod/mermaidjs/mermaid.min.e10726b8d0771e4cbd514fca2046be04c0e0e9e026868bb85c6b48445519c89048614f7edb73da4dfdd77126080f6e4fc6b0420571c1a2afa4446de7fe2ad266.js integrity="sha512-4QcmuNB3Hky9UU/KIEa+BMDg6eAmhou4XGtIRFUZyJBIYU9+23PaTf3XcSYID25PxrBCBXHBoq+kRG3n/irSZg=="></script>
-<script>var config={startOnLoad:!0,flowchart:{useMaxWidth:!0,htmlLabels:!0,curve:"cardinal"},theme:"neutral",securityLevel:"strict"};mermaid.initialize(config)</script>
-<div class=card>
-<div class="mb-4 position-relative">
-<picture>
-<source srcset=/images/post/launching-blog-2022_hu7d6bde8b9d7510d626361d118f92c933_2354890_545x0_resize_q90_h2_box_3.webp media="(max-width: 575px)">
-<source srcset=/images/post/launching-blog-2022_hu7d6bde8b9d7510d626361d118f92c933_2354890_600x0_resize_q90_h2_box_3.webp media="(max-width: 767px)">
-<source srcset=/images/post/launching-blog-2022_hu7d6bde8b9d7510d626361d118f92c933_2354890_650x0_resize_q90_h2_box_3.webp>
-<img loading=lazy decoding=async class="img-fluid w-100 rounded-4" src=/images/post/launching-blog-2022_hu7d6bde8b9d7510d626361d118f92c933_2354890_650x0_resize_box_3.png alt="Launching a blog in 2022" width=1920 height=1280>
-</picture>
-<ul class="list-inline card-badge">
-<li class=list-inline-item>
-<a href=/categories/thoughts/ class="badge badge-primary py-1">Thoughts</a>
-</li>
-</ul>
-</div>
-<div class=card-body>
-<h3 class=h6>
-<a class=title-linked href=/blog/launching-a-blog-in-2022/>Launching a blog in 2022</a>
-</h3>
-<ul class="list-inline card-meta d-flex align-items-center mb-3">
-<li class="list-inline-item d-flex align-items-center">
-<i class="fas fa-user me-2"></i>
-<a href=/about/>elsatch</a>
-</li>
-<li class="list-inline-item d-flex align-items-center">
-<i class="fas fa-calendar me-2"></i>
-<span>February 7, 2022</span>
-</li>
-</ul>
-<p class="card-text mb-4">Introduction January 2022. A new year starts, inmersed in COVID-19 pandemic. It&rsquo;s that time of the year when everyone sets new goals and starts new projects.</p>
-<a href=/blog/launching-a-blog-in-2022/ class="btn btn-outline-primary btn-sm">Read more</a>
-</div>
-</div>
-</div>
-</div>
+<div class="content drop-cap"><p>This week I started researching on <a href=Fablabs.io>Fablabs.io</a> huge dataset of Fablab spaces all around the world. The website offers an API and also a direct link to download all records. It&rsquo;s time to load it and start the analysis!</p>
+<h4 id=error-loading-the-file-because-of-the-encoding>Error loading the file because of the encoding</h4>
+<p>All lab information is stored in a JSON file. There are several methods to read this format either in Python or in Pandas. My first choice for exploring new datasets is the spyder IDE as it offers a Variable Explorer that shows the contents as soon as you load the file in the main window.</p>
+<p>I run the following lines, expecting it to load the file into a dataframe:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> pandas <span style=color:#66d9ef>as</span> pd
+
+file <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;21-02-2022-fablab-list.json&#39;</span>
+
+<span style=color:#66d9ef>with</span> open(file) <span style=color:#66d9ef>as</span> fablabs_io_list:
+    df <span style=color:#f92672>=</span> pd<span style=color:#f92672>.</span>read_json(fablabs_io_list)
+    print(df<span style=color:#f92672>.</span>info())
+</code></pre></div><p>But I got an error:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-console data-lang=console>UnicodeDecodeError: &#39;charmap&#39; codec can&#39;t decode byte 0x8d in position 17867: character maps to &lt;undefined&gt;
+</code></pre></div><p>Given there are fablabs all around the world, I suspected one the characters in the file could be causing this problem. I double checked the pandas documentation and fortunately, read_json() supports custom encoding.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-console data-lang=console>read_json(path_or_buf=None, orient=None, typ=&#39;frame&#39;, dtype: &#39;DtypeArg | None&#39; = None, convert_axes=None, convert_dates=True, keep_default_dates: &#39;bool&#39; = True, numpy: &#39;bool&#39; = False, precise_float: &#39;bool&#39; = False, date_unit=None, encoding=None, encoding_errors: &#39;str | None&#39; = &#39;strict&#39;, lines: &#39;bool&#39; = False, chunksize: &#39;int | None&#39; = None, compression: &#39;CompressionOptions&#39; = &#39;infer&#39;, nrows: &#39;int | None&#39; = None, storage_options: &#39;StorageOptions&#39; = None)
+    Convert a JSON string to pandas object.
+<span style=color:#960050;background-color:#1e0010>
+</span><span style=color:#960050;background-color:#1e0010></span>    Parameters
+    ----------
+    path_or_buf : a valid JSON str, path object or file-like object
+        Any valid string path is acceptable. The string could be a URL. Valid
+        URL schemes include http, ftp, s3, and file. For file URLs, a host is
+        expected. A local file could be:
+        ``file://localhost/path/to/table.json``.
+<span style=color:#960050;background-color:#1e0010>
+</span><span style=color:#960050;background-color:#1e0010></span>        If you want to pass in a path object, pandas accepts any
+        ``os.PathLike``.
+<span style=color:#960050;background-color:#1e0010>
+</span><span style=color:#960050;background-color:#1e0010></span>        By file-like object, we refer to objects with a ``read()`` method,
+        such as a file handle (e.g. via builtin ``open`` function)
+        or ``StringIO``.
+</code></pre></div><p>I included the parameter <code>encoding='utf8'</code> to the call of read_json(), but I still got the same error message!</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>with</span> open(file) <span style=color:#66d9ef>as</span> fablabs_io_list:
+    df <span style=color:#f92672>=</span> pd<span style=color:#f92672>.</span>read_json(fablabs_io_list, encoding<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;utf8&#39;</span>)
+</code></pre></div><h4 id=solving-the-encoding-error-when-loading-the-json-file>Solving the encoding error when loading the JSON file</h4>
+<p>I spent a few minutes reading the docs, <a href=https://stackoverflow.com/questions/57136931/why-do-i-get-a-unicode-encoding-error-in-the-middle-of-reading-a-file-with-pytho>Stack Overflow</a> and exploring the objects at the Spyder IDE. I got the following results at the Variable Explorer window:</p>
+<p><img src=images/post/encoding-json-file-to-dataframe/spyder-variable-explorer-output.png alt="Spyder Variable Explorer Output"></p>
+<p>The open context manager returns an object of type TextIOWrapper but the read_json() function expects a string, path or file-like object. Am I passing the right argument to it?</p>
+<p>I tried passing the encoding argument to the open call instead of passing it to the read_json() function and it worked!</p>
+<p>This is my complete code to import the json file into a pandas dataframe.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>with</span> open(file, <span style=color:#e6db74>&#34;r&#34;</span>, encoding<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;utf8&#39;</span>) <span style=color:#66d9ef>as</span> fablabs_io_list:
+    df <span style=color:#f92672>=</span> pd<span style=color:#f92672>.</span>read_json(fablabs_io_list)
+    print(df<span style=color:#f92672>.</span>info())
+</code></pre></div><p>This is the output of the info() method on the dataframe:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-console data-lang=console>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 2049 entries, 0 to 2048
+Data columns (total 23 columns):
+ #   Column           Non-Null Count  Dtype  
+---  ------           --------------  -----  
+ 0   id               2049 non-null   int64  
+ 1   name             2049 non-null   object 
+ 2   kind_name        2049 non-null   object 
+ 3   parent_id        701 non-null    float64
+ 4   blurb            2002 non-null   object 
+ 5   description      2020 non-null   object 
+ 6   slug             2049 non-null   object 
+ 7   avatar_url       1710 non-null   object 
+ 8   header_url       1359 non-null   object 
+ 9   address_1        2021 non-null   object 
+ 10  address_2        2019 non-null   object 
+ 11  city             2049 non-null   object 
+ 12  county           2049 non-null   object 
+ 13  postal_code      2047 non-null   object 
+ 14  country_code     2049 non-null   object 
+ 15  latitude         1835 non-null   float64
+ 16  longitude        1835 non-null   float64
+ 17  address_notes    2020 non-null   object 
+ 18  phone            2020 non-null   object 
+ 19  email            2020 non-null   object 
+ 20  capabilities     2049 non-null   object 
+ 21  activity_status  1490 non-null   object 
+ 22  links            2049 non-null   object 
+dtypes: float64(3), int64(1), object(19)
+memory usage: 368.3+ KB
+None
+</code></pre></div><h4 id=debuging-the-problem>Debuging the problem</h4>
+<p>Once I managed to get data loaded, I tried to debug the problem. Does it return an error if I pass the file directly to the read_json function?</p>
+<p>I launched my shell and tried loading the file, including the `encoding=&lsquo;utf8&rsquo; parameter:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-console data-lang=console>python
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
+Type &#34;help&#34;, &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information.
+&gt;&gt;&gt; import pandas as pd
+&gt;&gt;&gt; pd.read_json<span style=color:#f92672>(</span><span style=color:#e6db74>&#39;21-02-2022-fablab-list.json&#39;</span>, encoding<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;utf8&#39;</span><span style=color:#f92672>)</span>
+        id                    name kind_name  ...                                       capabilities activity_status                                              links
+0     2386            Al Jazri Lab   fab_lab  ...  [three_d_printing, cnc_milling, circuit_produc...          active  [{&#39;id&#39;: 31737, &#39;url&#39;: &#39;https://www.facebook.co...
+1       17                    PiNG   fab_lab  ...                                                 []            None  [{&#39;id&#39;: 52, &#39;url&#39;: &#39;http://fablab.pingbase.net&#39;}]
+2       20  FabLab INSA Strasbourg   fab_lab  ...                                                 []            None      [{&#39;id&#39;: 55, &#39;url&#39;: &#39;http://www.ideaslab.fr&#39;}]
+3      793           FabLab Zagreb   fab_lab  ...  [three_d_printing, cnc_milling, circuit_produc...          active      [{&#39;id&#39;: 1323, &#39;url&#39;: &#39;http://www.fablab.hr&#39;}]
+4     2379                Exchange   fab_lab  ...  [three_d_printing, cnc_milling, circuit_produc...         planned  [{&#39;id&#39;: 30145, &#39;url&#39;: &#39;https://laportelibrary....
+...    ...                     ...       ...  ...                                                ...             ...                                                ...
+2044  1587        TechWorks Amman    fab_lab  ...  [three_d_printing, cnc_milling, circuit_produc...          active  [{&#39;id&#39;: 29176, &#39;url&#39;: &#39;https://youtu.be/zLt3aO...
+2045  1538               MakersLab   fab_lab  ...  [three_d_printing, cnc_milling, circuit_produc...          active  [{&#39;id&#39;: 4968, &#39;url&#39;: &#39;http://www.makerslab.nl/&#39;}]
+2046  1730       BISCAST ManFabLab   fab_lab  ...  [three_d_printing, cnc_milling, laser, precisi...          active                                                 []
+2047  2210         FabLab L&#39;Aquila   fab_lab  ...  [three_d_printing, cnc_milling, circuit_produc...          active  [{&#39;id&#39;: 30617, &#39;url&#39;: &#39;https://www.instagram.c...
+2048  2230                  ZapLab   fab_lab  ...  [three_d_printing, cnc_milling, circuit_produc...          active  [{&#39;id&#39;: 30791, &#39;url&#39;: &#39;https://www.youtube.com...
+<span style=color:#960050;background-color:#1e0010>
+</span><span style=color:#960050;background-color:#1e0010></span>[2049 rows x 23 columns]
+</code></pre></div><p>So it only fails when I open the file externally and pass it to the read_json function. It works if I pass the encoding parameter to the open call or the read_json(). Why does it happen this way? I might need to return back to determine it when I am more fluent in Python.</p>
+<p><em>Photo by Hunter Harritt on Unsplash.</em></p>
 </div>
 </div>
 <aside class=col-lg-4>
@@ -635,6 +466,139 @@ Workflow <small class=ms-auto>2</small>
 </div>
 </div>
 </aside>
+</div>
+</div>
+</section>
+<section class="section-sm pt-0">
+<div class=container>
+<div class=row>
+<div class=col-12>
+<div class=section-title>
+<h2 class="h4 title-border">Releted Posts</h2>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+<script src=https://elsatch.github.io/mod/mermaidjs/mermaid.min.e10726b8d0771e4cbd514fca2046be04c0e0e9e026868bb85c6b48445519c89048614f7edb73da4dfdd77126080f6e4fc6b0420571c1a2afa4446de7fe2ad266.js integrity="sha512-4QcmuNB3Hky9UU/KIEa+BMDg6eAmhou4XGtIRFUZyJBIYU9+23PaTf3XcSYID25PxrBCBXHBoq+kRG3n/irSZg=="></script>
+<script>var config={startOnLoad:!0,flowchart:{useMaxWidth:!0,htmlLabels:!0,curve:"cardinal"},theme:"neutral",securityLevel:"strict"};mermaid.initialize(config)</script>
+<div class=card>
+<div class="mb-4 position-relative">
+<picture>
+<source srcset=/images/post/error-hugo-theme-hugo-module/hugo-theme-as-hugo-module_hub844ef663fb652406c2efbdabbe424ee_5646089_545x0_resize_q90_h2_box_3.webp media="(max-width: 575px)">
+<source srcset=/images/post/error-hugo-theme-hugo-module/hugo-theme-as-hugo-module_hub844ef663fb652406c2efbdabbe424ee_5646089_600x0_resize_q90_h2_box_3.webp media="(max-width: 767px)">
+<source srcset=/images/post/error-hugo-theme-hugo-module/hugo-theme-as-hugo-module_hub844ef663fb652406c2efbdabbe424ee_5646089_650x0_resize_q90_h2_box_3.webp>
+<img loading=lazy decoding=async class="img-fluid w-100 rounded-4" src=/images/post/error-hugo-theme-hugo-module/hugo-theme-as-hugo-module_hub844ef663fb652406c2efbdabbe424ee_5646089_650x0_resize_box_3.png alt="Error building my web when using Hugo Theme as a Hugo Module" width=1920 height=1280>
+</picture>
+<ul class="list-inline card-badge">
+<li class=list-inline-item>
+<a href=/categories/hugo/ class="badge badge-primary py-1">Hugo</a>
+</li>
+</ul>
+</div>
+<div class=card-body>
+<h3 class=h6>
+<a class=title-linked href=/blog/error-using-hugo-theme-as-a-module/>Error building my web when using Hugo Theme as a Hugo Module</a>
+</h3>
+<ul class="list-inline card-meta d-flex align-items-center mb-3">
+<li class="list-inline-item d-flex align-items-center">
+<i class="fas fa-user me-2"></i>
+<a href=/about/>elsatch</a>
+</li>
+<li class="list-inline-item d-flex align-items-center">
+<i class="fas fa-calendar me-2"></i>
+<span>February 20, 2022</span>
+</li>
+</ul>
+<p class="card-text mb-4">Introduction I have choosen Geeky Hugo as the theme for this site. I forked the original repo to my Github account.</p>
+<a href=/blog/error-using-hugo-theme-as-a-module/ class="btn btn-outline-primary btn-sm">Read more</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+<script src=https://elsatch.github.io/mod/mermaidjs/mermaid.min.e10726b8d0771e4cbd514fca2046be04c0e0e9e026868bb85c6b48445519c89048614f7edb73da4dfdd77126080f6e4fc6b0420571c1a2afa4446de7fe2ad266.js integrity="sha512-4QcmuNB3Hky9UU/KIEa+BMDg6eAmhou4XGtIRFUZyJBIYU9+23PaTf3XcSYID25PxrBCBXHBoq+kRG3n/irSZg=="></script>
+<script>var config={startOnLoad:!0,flowchart:{useMaxWidth:!0,htmlLabels:!0,curve:"cardinal"},theme:"neutral",securityLevel:"strict"};mermaid.initialize(config)</script>
+<div class=card>
+<div class="mb-4 position-relative">
+<picture>
+<source srcset=/images/post/creating-custom-snippets-in-vscode/create-custom-snippets-in-vscode_hu7501db08e317ee7b9c2b240b4f9d45b5_362770_545x0_resize_q90_h2_box_3.webp media="(max-width: 575px)">
+<source srcset=/images/post/creating-custom-snippets-in-vscode/create-custom-snippets-in-vscode_hu7501db08e317ee7b9c2b240b4f9d45b5_362770_600x0_resize_q90_h2_box_3.webp media="(max-width: 767px)">
+<source srcset=/images/post/creating-custom-snippets-in-vscode/create-custom-snippets-in-vscode_hu7501db08e317ee7b9c2b240b4f9d45b5_362770_650x0_resize_q90_h2_box_3.webp>
+<img loading=lazy decoding=async class="img-fluid w-100 rounded-4" src=/images/post/creating-custom-snippets-in-vscode/create-custom-snippets-in-vscode_hu7501db08e317ee7b9c2b240b4f9d45b5_362770_650x0_resize_box_3.png alt="Create custom snippets in VSCode" width=1920 height=1280>
+</picture>
+<ul class="list-inline card-badge">
+<li class=list-inline-item>
+<a href=/categories/vscode/ class="badge badge-primary py-1">Vscode</a>
+</li>
+<li class=list-inline-item>
+<a href=/categories/editors/ class="badge badge-primary py-1">Editors</a>
+</li>
+<li class=list-inline-item>
+<a href=/categories/workflow/ class="badge badge-primary py-1">Workflow</a>
+</li>
+</ul>
+</div>
+<div class=card-body>
+<h3 class=h6>
+<a class=title-linked href=/blog/creating-custom-snippets-in-vscode/>Create custom snippets in VSCode</a>
+</h3>
+<ul class="list-inline card-meta d-flex align-items-center mb-3">
+<li class="list-inline-item d-flex align-items-center">
+<i class="fas fa-user me-2"></i>
+<a href=/about/>elsatch</a>
+</li>
+<li class="list-inline-item d-flex align-items-center">
+<i class="fas fa-calendar me-2"></i>
+<span>February 18, 2022</span>
+</li>
+</ul>
+<p class="card-text mb-4">Introduction If you need to write several times the same shortcodes or writable incantations, it might make sense to use snippets.</p>
+<a href=/blog/creating-custom-snippets-in-vscode/ class="btn btn-outline-primary btn-sm">Read more</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+<script src=https://elsatch.github.io/mod/mermaidjs/mermaid.min.e10726b8d0771e4cbd514fca2046be04c0e0e9e026868bb85c6b48445519c89048614f7edb73da4dfdd77126080f6e4fc6b0420571c1a2afa4446de7fe2ad266.js integrity="sha512-4QcmuNB3Hky9UU/KIEa+BMDg6eAmhou4XGtIRFUZyJBIYU9+23PaTf3XcSYID25PxrBCBXHBoq+kRG3n/irSZg=="></script>
+<script>var config={startOnLoad:!0,flowchart:{useMaxWidth:!0,htmlLabels:!0,curve:"cardinal"},theme:"neutral",securityLevel:"strict"};mermaid.initialize(config)</script>
+<div class=card>
+<div class="mb-4 position-relative">
+<picture>
+<source srcset=/images/post/meta-editing-problems/meta-editing-problems_huf30791e25402d48bf1d47c2f65eadfc4_369715_545x0_resize_q90_h2_box_3.webp media="(max-width: 575px)">
+<source srcset=/images/post/meta-editing-problems/meta-editing-problems_huf30791e25402d48bf1d47c2f65eadfc4_369715_600x0_resize_q90_h2_box_3.webp media="(max-width: 767px)">
+<source srcset=/images/post/meta-editing-problems/meta-editing-problems_huf30791e25402d48bf1d47c2f65eadfc4_369715_650x0_resize_q90_h2_box_3.webp>
+<img loading=lazy decoding=async class="img-fluid w-100 rounded-4" src=/images/post/meta-editing-problems/meta-editing-problems_huf30791e25402d48bf1d47c2f65eadfc4_369715_650x0_resize_box_3.png alt="Meta editing problems... again" width=1920 height=1280>
+</picture>
+<ul class="list-inline card-badge">
+<li class=list-inline-item>
+<a href=/categories/vscode/ class="badge badge-primary py-1">Vscode</a>
+</li>
+<li class=list-inline-item>
+<a href=/categories/editors/ class="badge badge-primary py-1">Editors</a>
+</li>
+<li class=list-inline-item>
+<a href=/categories/workflow/ class="badge badge-primary py-1">Workflow</a>
+</li>
+</ul>
+</div>
+<div class=card-body>
+<h3 class=h6>
+<a class=title-linked href=/blog/meta-editing-problems/>Meta editing problems&mldr; again</a>
+</h3>
+<ul class="list-inline card-meta d-flex align-items-center mb-3">
+<li class="list-inline-item d-flex align-items-center">
+<i class="fas fa-user me-2"></i>
+<a href=/about/>elsatch</a>
+</li>
+<li class="list-inline-item d-flex align-items-center">
+<i class="fas fa-calendar me-2"></i>
+<span>February 18, 2022</span>
+</li>
+</ul>
+<p class="card-text mb-4">Introduction I am a fan of customizable editors. Over the years, I have tried dozens of editors to create my content, posts, texts, etc.</p>
+<a href=/blog/meta-editing-problems/ class="btn btn-outline-primary btn-sm">Read more</a>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
