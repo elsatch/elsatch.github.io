@@ -99,8 +99,8 @@ Fortunately, this extension offers some parameters to change this behavior. You 
 In my case, I changed the Path to save the images in a folder named as the blogpost, under the Hugo static images route. I also made the extension ask me for a filename before saving it to disk. This is my settings.json configuration for Paste Image:
 
 ```json
-"pasteImage.path": "${projectRoot}/assets/images/post/${currentFileNameWithoutExt}",
-"pasteImage.basePath": "${projectRoot}/assets/",
+"pasteImage.path": "${projectRoot}/static/images/post/${currentFileNameWithoutExt}",
+"pasteImage.basePath": "${projectRoot}/static/",
 "pasteImage.showFilePathConfirmInputBox": true,
 "pasteImage.filePathConfirmInputBoxMode": "onlyName"
 ```
