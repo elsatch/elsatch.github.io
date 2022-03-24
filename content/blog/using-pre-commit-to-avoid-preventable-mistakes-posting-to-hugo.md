@@ -2,10 +2,10 @@
 title: "Using pre-commit to avoid preventable mistakes"
 description: "meta description"
 image: "images/post/using-pre-commit-to-avoid-preventable-mistakes-posting-to-hugo/using-pre-commit-to-avoid-preventable-mistakes-posting-to-hugo.png"
-date: 2022-02-22T18:30:00+02:00
+date: 2022-03-25T18:30:00+02:00
 categories: ["editors", "workflow"]
 type: "regular" # available types: [featured/regular]
-draft: true
+draft: false
 mermaid: false
 ---
 A couple of years ago I attended Airflow conference (virtually). One of the workshops was on how to contribute to the project. As I joined that session, I discovered a rich set of tools to produce quality code and prevent mistakes.
@@ -44,3 +44,9 @@ These are the checks I would love to have automated for every commit!
 
 - Checks publication date and verifies if it is a duplicate of any previous posts.
   
+- Checks all links in the new article, to verify the websites are reachable.
+
+##### Work ahead!
+In a future post, I will try to configure all of these rules using the available modules at Pre-Commit website. Stay tuned!
+
+_Photo by Agence Olloweb on Unsplash_
