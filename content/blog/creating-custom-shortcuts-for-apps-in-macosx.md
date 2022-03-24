@@ -32,3 +32,5 @@ According to the manual, we need to pass as a parameter the complete route to th
 
 >Note that this route is language dependant. For example, in Spanish MacOS route is 'Archivo->Compartir->Drafts' 
 
+__Cover image Photo by Andrii Leonov on Unsplash._
+  
