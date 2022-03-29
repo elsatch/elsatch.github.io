@@ -37,4 +37,6 @@ Using `M-x set-buffer-file-coding-system`,` I changed the buffer coding to utf-8
 
 The only missing piece for me now is: why was the coding system utf-8-mac instead of the default utf-8-unix? I need to verify other files, to see if they are using the right coding too or not.
 
+P.S [This article about end of lines](https://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/) by Tim Clem, a Github worker, explains the challenges on keeping consistency with multiple contributors.
+
 _Photo by Markus Spiske on Unsplash_
