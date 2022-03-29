@@ -53,7 +53,7 @@ Heimdall supports both websites and application links. Setting those up is as ea
 If you want it to appear on your dashboard, don't forget to mark it as pinned before saving.
 
 This is my sample dashboard with a link to this blog and a link to my Gitea instance:
-![Initial Heimdall dashboard](images/post/heimdall-dashboard-small.png)
+![Initial Heimdall dashboard](images/post/creating-personal-dashboard-with-heimdall/heimdall-dashboard-small.png)
 
 Total setup time (including writting this post): less than 20 minutes!
 
