@@ -115,7 +115,7 @@ memory usage: 368.3+ KB
 None
 ```
 
-#### Debuging the problem
+#### Debugging the problem
 
 Once I managed to get data loaded, I tried to debug the problem. Does it return an error if I pass the file directly to the read_json function?
 
