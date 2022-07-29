@@ -5,7 +5,7 @@ image: "images/post/creating-fast-presentations-using-orgmode-and-reveal/creatin
 date: 2022-07-29T01:13:30+02:00
 categories: ["emacs", "orgmode"]
 type: "featured" # available types: [featured/regular]
-draft: true
+draft: false
 mermaid: false
 ---
 #### Introduction
