@@ -6,7 +6,7 @@ date: 2022-08-05T13:20:00+02:00
 categories: ["setup", "emacs"]
 tags: ["#100DaysToOffload"]
 type: "regular" # available types: [featured/regular]
-draft: true
+draft: false
 ---
 #### Introduction
 
