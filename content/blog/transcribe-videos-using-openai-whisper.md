@@ -6,7 +6,7 @@ date: 2022-11-14T18:00:00+02:00
 categories: ["deep learning"]
 tags: ["audio transcription"]
 type: "regular" # available types: [featured/regular]
-draft: true
+draft: false
 mermaid: false
 ---
 
