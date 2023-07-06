@@ -181,7 +181,7 @@ Pages
 </li>
 </ul>
 <div class="content drop-cap"><h4 id=introduction>Introduction</h4>
-<p>In this document, I will share the steps requiered to get an AI workstation machine ready. I&rsquo;ll be updating the content as my configuration evolves.</p>
+<p>In this document, I will share the steps required to get an AI workstation machine ready. I&rsquo;ll be updating the content as my configuration evolves.</p>
 <h4 id=base-operating-system>Base Operating System</h4>
 <p>My workstation will be using Ubuntu 20.04 LTS as the base operating system. I have tried the newer 22.04 LTS version too, but it includes Python 3.10 as default Python installation and I have found compatibility problems with some packages I was testing at the time <a href=https://greatexpectations.io>like (Great_Expectations)</a>.</p>
 <p>For the moment given, I don&rsquo;t need any bleeding edge version that is only available on 22.04</p>
@@ -198,8 +198,8 @@ Pages
 <h4 id=post-install-steps>Post-Install steps</h4>
 <p>I created an Ubuntu 20.04 LTS boot disk using <a href=https://www.balena.io/etcher/>BalenaEtcher</a>, then booted my laptop. Configuration options were minimal and I chose not to load any external packages for NVidia or wi-fi, following the advice from <a href=https://davidadrian.cc/definitive-data-scientist-setup/>David Adrián blogpost</a></p>
 <p>Once system was installed, I installed the following packages:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>sudo pip install net-tools
-sudo pip install openssh-server
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>sudo apt install net-tools
+sudo apt install openssh-server
 </code></pre></div><p>net-tools offers <code>ifconfig</code> command and openssh-server is a must for remote configuration.</p>
 <h4 id=installing-lambda-stack>Installing Lambda Stack</h4>
 <p>After checking several alternatives, I decided I will give a try to <a href=https://lambdalabs.com/lambda-stack-deep-learning-software>Lambda Stack</a>, a customization layer on top of Ubuntu that brings the most popular tools for Deep Learning with a simple script.</p>
