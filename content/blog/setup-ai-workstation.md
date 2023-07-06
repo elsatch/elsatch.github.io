@@ -10,7 +10,7 @@ draft: false
 ---
 #### Introduction
 
-In this document, I will share the  steps requiered to get an AI workstation machine ready. I'll be updating the content as my configuration evolves.
+In this document, I will share the  steps required to get an AI workstation machine ready. I'll be updating the content as my configuration evolves.
 
 #### Base Operating System
 
@@ -37,8 +37,8 @@ I created an Ubuntu 20.04 LTS boot disk using [BalenaEtcher](https://www.balena.
 
 Once system was installed, I installed the following packages:
 ```sh
-sudo pip install net-tools
-sudo pip install openssh-server
+sudo apt install net-tools
+sudo apt install openssh-server
 ```
 
 net-tools offers `ifconfig` command and openssh-server is a must for remote configuration.
